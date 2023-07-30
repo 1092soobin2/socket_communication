@@ -1,0 +1,18 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<project name="loader" default="compile" basedir=".">
+  
+  <property name="src.dir" value="src" />
+  <property name="build.dir" value="build" />
+
+<!-- Compile --> 
+  <target name="compile">
+    <mkdir dir="${build.dir}" />
+    <javac srcdir="${src.dir}" destdir="${build.dir}" />
+  </target>
+  
+<!-- Clean classes directory -->
+  <target name="clean">
+    <delete dir="${build.dir}" />
+  </target>
+  
+</project>
